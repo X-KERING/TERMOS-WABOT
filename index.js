@@ -41,7 +41,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'FN:Ownerbot\n'
             + 'ORG:Creator SELF BOT;\n'
             + 'TEL;type=CELL;type=VOICE;waid=6285959375675:+62 877-7545-2636\n'
-            + 'END:VCARD' // T027BOT
+            + 'END:VCARD'
 prefix = '!'
 blocked = []            
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
