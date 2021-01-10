@@ -6,9 +6,6 @@
 
 
 <p align="center">
-<a href="#"><img title="SELF-BOT" src="https://img.shields.io/badge/T027BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
-</p>
-<p align="center">
 <a href="https://github.com/HAFizh-15"><img title="Author" src="https://img.shields.io/badge/HAFIZH-FREE%20SELF%20BOT-green)"></a>
 </p>
 <p align="center">
