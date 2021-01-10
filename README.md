@@ -12,7 +12,6 @@
 <a href="https://github.com/HAFizh-15"><img title="Author" src="https://img.shields.io/badge/HAFIZH-FREE%20SELF%20BOT-green)"></a>
 </p>
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/XTT0G4N5/T027BOT"><img title="Rating" src="https://www.codefactor.io/repository/github/XTT0G4N5/T027BOT/badge/main"></a>
 </p>
 <p align="center">
 <a href="https://github.com/HAFizh-15/TERMOS-WABOT/followers"><img title="Followers" src="https://img.shields.io/github/followers/A187ID?color=blue&style=flat-square"></a>
