@@ -15,9 +15,9 @@ const
    mentionedJid,
    processTime,
 } = require("@adiwajshing/baileys")
-const qrcode = require("qrcode-terminal") //ANAK ASU
-const moment = require("moment-timezone") //TOBAT SU
-const fs = require("fs") //SU
+const qrcode = require("qrcode-terminal")
+const moment = require("moment-timezone") 
+const fs = require("fs")
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./lib/help')
 const { donasi } = require('./lib/donasi')
@@ -219,7 +219,7 @@ hafizh.on('group-participants-update', async (anu) => {
                           await hafizh.chatRead(jid)
                     })
 					teks = `\`\`\`Berhasil membaca ${chats.length} Chat !\`\`\``
-					await hafizh.sendMessage(from, teks, text, {quoted: tod})
+					await hafizh.sendMessage(from, teks, MessageType.text, {quoted: tod})
 					console.log(chats.length)
 					break
 				case 'blocklist': 
