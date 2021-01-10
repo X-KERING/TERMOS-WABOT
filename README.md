@@ -9,7 +9,7 @@
 <a href="#"><img title="SELF-BOT" src="https://img.shields.io/badge/T027BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/HAFizh-15"><img title="Author" src="https://img.shields.io/github/package-json/dependency-version/HAFIZH/HAFizh-15/TERMOS-WABOT?color=greeen&label=SELF-BOT&logo=HAFIZH&logoColor=yellow)"></a>
+<a href="https://github.com/HAFizh-15"><img title="Author" src="https://img.shields.io/badge/HAFIZH-FREE%20SELF%20BOT-green)"></a>
 </p>
 <p align="center">
 <a href="https://www.codefactor.io/repository/github/XTT0G4N5/T027BOT"><img title="Rating" src="https://www.codefactor.io/repository/github/XTT0G4N5/T027BOT/badge/main"></a>
@@ -46,7 +46,7 @@ Siapin alat dan bahannya.
 ```
 
 ### CARA INSTALLNYA  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px">
-Script ini di modifikasi sama saya sendiri T027BOT.
+Script ini di modifikasi sama saya dkk.
 ```bash
 > kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
@@ -101,16 +101,15 @@ DAN LAIN LAIN
 Ket: Aktif 24 jam
 
 ## DONASI <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="29px">
-* [`Donasi T027BOT`](comingsoon)
+* [`Donasi`](saweria.co/HAFizhscript)
 
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
 
-* [`Youtube Admin`](https://youtube.com/channel/UCnjYXfhCDV2m6aALPoF6_XA)
-* [`Instagram Admin`](https://instagram.com/kingg_squard028)
-* [`WhatsApp Admin `](https://wa.me/+6287775452636)
-* [`Group WhatsApp `](https://chat.whatsapp.com/HsXwKRT2hAiGW6YXFGWm4Z)
+* [`WhatsApp Admin `](https://wa.me/+6285959375675)
+* [`Group WhatsApp `](https://chat.whatsapp.com/GejprPqHNQW3cBDuKtb7UX)
 ## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
-* [`T027BOT`](https://github.com/XTT0G4N5/T027BOT)
+* .[`TO27BOT`](https://github.com/MhankBarBar/termux-wabot)
+* [`MHANKBARBAR`](https://github.com/XTT0G4N5/T027BOT)
 
