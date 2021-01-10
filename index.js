@@ -431,10 +431,9 @@ hafizh.on('group-participants-update', async (anu) => {
                 buff = await getBuffer(`https://api.vhtear.com/puisi_image&apikey=${vhtearkey}`)
 				hafizh.sendMessage(from, buff, image, {quoted: tod})
 				break
-			
-
-			
-
+		case 'kapankah':
+					const kapan1 = body.slice(1)
+					const kapan2 = [
 					'Hari ini',
 
 					'Mungkin besok',
@@ -468,10 +467,9 @@ hafizh.on('group-participants-update', async (anu) => {
 					hafizh.sendMessage(from, jawab1, text, {quoted: tod})
 
 					break
-				
-
-		
-
+			case 'apakah':
+					const tanya = body.slice(1)
+					const apa = [
 					'Ya',
 
 					'Mungkin',
