@@ -56,7 +56,7 @@ Script ini di modifikasi sama saya dkk.
 ## KLO MAU PAKAI JANGAN LUPA DI FORK YA NGAB
 
 ##  APIKEY
-* [`Vhtear (https://vhtear.com)`]
+* [`Vhtear`](https://vhtear.com)
 * [`Tobzkey`](https://tobz-api.herokuapp.com/api)
 * [`Mhank BarBar`](mhankbarbars.herokuapp.com/)
 * [`Zekskey`](https://api-zeks.harispoppy.com/)
