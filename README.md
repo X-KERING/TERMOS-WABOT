@@ -11,10 +11,10 @@
 <p align="center">
 </p>
 <p align="center">
-<a href="https://github.com/HAFizh-15/TERMOS-WABOT/followers"><img title="Followers" src="https://img.shields.io/github/followers/A187ID?color=blue&style=flat-square"></a>
-<a href="https://github.com/HAFizh-15/TERMOS-WABOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/A187ID/AR15BOT?color=red&style=flat-square"></a>
-<a href="https://github.com/HAFizh-15/TERMOS-WABOT/network/members"><img title="Forks" src="https://img.shields.io/github/forks/A187ID/AR15BOT?color=red&style=flat-square"></a>
-<a href="https://github.com/HAFizh-15/TERMOS-WABOT/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/A187ID/AR15BOT?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/HAFizh-15?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/HAFizh-15?color=green&label=Follow&style=social"></a>
+<a href="https://github.com/HAFizh-15/TERMOS-WABOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/followers/HAFizh-15?color=green&label=STARS&style=social"></a>
+<a href="https://github.com/HAFizh-15/TERMOS-WABOT/network/members"><img title="Forks" src="https://img.shields.io/github/followers/HAFizh-15?color=green&label=FORKS&style=social"></a>
+<a href="https://github.com/HAFizh-15/TERMOS-WABOT/watchers"><img title="Watching" src="https://img.shields.io/github/followers/HAFizh-15?color=green&label=WACHING&style=sociale"></a>
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FA187ID%2FAR15BOT&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
 </p>
 <div align="center">
@@ -52,6 +52,12 @@ Script ini di modifikasi sama saya dkk.
 > node index js
 > Tinggal scan kode qr yeee...done
 ```
+
+##  APIKEY
+* [`Vhtear`](https://vhtear.com)
+* [`Tobzkey`](https://tobz-api.herokuapp.com/api)
+* [`Mhank BarBar`](mhankbarbars.herokuapp.com/)
+* [`Zekskey`](https://api-zeks.harispoppy.com/)
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
 
