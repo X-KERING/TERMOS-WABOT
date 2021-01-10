@@ -53,6 +53,8 @@ Script ini di modifikasi sama saya dkk.
 > Tinggal scan kode qr yeee...done
 ```
 
+## KLO MAU PAKAI JANGAN LUPA DI FORK YA NGAB
+
 ##  APIKEY
 * [`Vhtear`](https://vhtear.com)
 * [`Tobzkey`](https://tobz-api.herokuapp.com/api)
