@@ -212,22 +212,15 @@ hafizh.on('group-participants-update', async (anu) => {
 					buffer = await getBuffer(me.imgUrl)
 					hafizh.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
-				
-
-		
-
+			case 'readall':
+					if (!isOwner)return reply(mess.only.ownerB)
+					var chats = await hafizh.chats.all()
                     chats.map( async ({ jid }) => {
-
-                          await febb.chatRead(jid)
-
+                          await hafizh.chatRead(jid)
                     })
-
 					teks = `\`\`\`Berhasil membaca ${chats.length} Chat !\`\`\``
-
-					await febb.sendMessage(from, teks, text, {quoted: mek})
-
+					await hafizh.sendMessage(from, teks, text, {quoted: tod})
 					console.log(chats.length)
-
 					break
 				case 'blocklist': 
 					teks = 'BLOCK LIST  :\n'
