@@ -68,6 +68,8 @@ Script ini di modifikasi sama saya dkk.
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
 |       ✅       | add                          |
+|       ✅       | url2img                           |
+|       ✅       | ReadAll                         |
 |       ✅       | kick                     |
 |       ✅       | demote                     |
 |       ✅       | promote                       |
