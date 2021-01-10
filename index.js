@@ -431,6 +431,64 @@ hafizh.on('group-participants-update', async (anu) => {
                 buff = await getBuffer(`https://api.vhtear.com/puisi_image&apikey=${vhtearkey}`)
 				hafizh.sendMessage(from, buff, image, {quoted: tod})
 				break
+			
+
+			
+
+					'Hari ini',
+
+					'Mungkin besok',
+
+					'1 Minggu lagi',
+
+					'Masih lama',
+
+					'3 Bulan lagi',
+
+					'7 Bulan lagi',
+
+					'3 Tahun lagi',
+
+					'4 Bulan lagi',
+
+					'2 Bulan lagi',
+
+					'1 Tahun lagi',
+
+					'1 Bulan lagi',
+
+					'Coba ulangi',
+
+					]
+
+					const kpnkh = kapan2[Math.floor(Math.random() * (kapan2.length))]
+
+					const jawab1 = `Pertanyaan : *${kapan1}*\n\nJawaban: ${kpnkh}`
+
+					hafizh.sendMessage(from, jawab1, text, {quoted: tod})
+
+					break
+				
+
+		
+
+					'Ya',
+
+					'Mungkin',
+
+					'Tidak',
+
+					'Coba Ulangi',
+
+					]
+
+					const apkh = apa[Math.floor(Math.random() * (apa.length))]
+
+					const jawab = `Pertanyaan : *${tanya}*\n\nJawaban: ${apkh}`
+
+					hafizh.sendMessage(from, jawab, text, {quoted: tod})
+
+					break
 			    case 'darkjoke':
                                 data = await fetchJson(`https://api-zeks.harispoppy.com/api/darkjokes?apikey=${zekskey}`)
                                 dark = data.result
