@@ -15,7 +15,7 @@
 <a href="https://github.com/HAFizh-15/TERMOS-WABOT/stargazers/"><img title="Stars" src="https://img.shields.io/github/followers/HAFizh-15?color=green&label=STARS&style=social"></a>
 <a href="https://github.com/HAFizh-15/TERMOS-WABOT/network/members"><img title="Forks" src="https://img.shields.io/github/followers/HAFizh-15?color=green&label=FORKS&style=social"></a>
 <a href="https://github.com/HAFizh-15/TERMOS-WABOT/watchers"><img title="Watching" src="https://img.shields.io/github/followers/HAFizh-15?color=green&label=WACHING&style=sociale"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FA187ID%2FAR15BOT&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FHAFizh-15%2FTERMOS-WABOT&count_bg=%2332DE10&title_bg=%23555050&icon=opencollective.svg&icon_color=%23FF0000&title=hits&edge_flat=false"/></a>
 </p>
 <div align="center">
 <details>
