@@ -347,7 +347,6 @@ hafizh.on('group-participants-update', async (anu) => {
 					break
 				case 'setprefix':
 					if (args.length < 1) return
-					if (!isOwner) return reply(mess.only.ownerB)
 					prefix = args[0]
 					reply(`𝗣𝗿𝗲𝗳𝗶𝘅 𝗯𝗲𝗿𝗵𝗮𝘀𝗶𝗹 𝗱𝗶 𝘂𝗯𝗮𝗵 𝗺𝗲𝗻𝗷𝗮𝗱𝗶 : ${prefix}`)
 					break 	
@@ -650,16 +649,7 @@ hafizh.on('group-participants-update', async (anu) => {
 				case 'fake': // tuh costum reply
               costum('Ini', '6287775452636@s.whatsapp.com')
                   break	
-                 case 'linkgc':	 
-                if (!isGroup) return reply(mess.only.group)
-				if (!isGroupAdmins) return reply(mess.only.admin) 
-				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-                 const linkgc = await conn.groupInviteCode (from) 
-                 reply (linkgc)
-                 break 
 				case 'tagall':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
@@ -680,14 +670,10 @@ hafizh.on('group-participants-update', async (anu) => {
 					reply('𝗰𝗹𝗲𝗮𝗿 𝗮𝗹𝗹 𝘀𝘂𝗸𝘀𝗲𝘀 𝘆𝗮𝗵 :)')
 					break
 			       case 'block':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isOwner) return reply(mess.only.ownerB)
 					hafizh.blockUser (`${body.slice(7)}@c.us`, "add")
 					hafizh.sendMessage(from, `𝗽𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝗗𝗶𝘁𝗲𝗿𝗶𝗺𝗮, 𝗺𝗲𝗺𝗯𝗹𝗼𝗸𝗶𝗿 ${body.slice(7)}@c.us`, text)
 					break
                     case 'unblock':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isOwner) return reply(mess.only.ownerB)
 				    hafizh.blockUser (`${body.slice(9)}@c.us`, "remove")
 					hafizh.sendMessage(from, `𝗽𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝗗𝗶𝘁𝗲𝗿𝗶𝗺𝗮, 𝗺𝗲𝗺𝗯𝘂𝗸𝗮 ${body.slice(9)}@c.us`, text)
 				break
@@ -698,7 +684,6 @@ hafizh.on('group-participants-update', async (anu) => {
 	
                     break
 				case 'bc': 
-					if (!isOwner) return reply('𝙡𝙪 𝙨𝙞𝙖𝙥𝙖?') 
 					if (args.length < 1) return reply('.......')
 					anu = await hafizh.chats.all()
 					if (isMedia && !tod.message.videoMessage || isQuotedImage) {
@@ -716,17 +701,11 @@ hafizh.on('group-participants-update', async (anu) => {
 					}
 					break
 			       	case 'setpp': 
-                        if (!isGroup) return reply(mess.only.group)
-                       if (!isGroupAdmins) return reply(mess.only.admin)
-                        if (!isBotGroupAdmins) return reply(mess.only.Badmin)
                        media = await hafizh.downloadAndSaveMediaMessage(tod)
                          await hafizh.updateProfilePicture (from, media)
                         reply('𝗦𝘂𝗸𝘀𝗲𝘀 𝗺𝗲𝗻𝗴𝗴𝗮𝗻𝘁𝗶 𝗶𝗰𝗼𝗻 𝗚𝗿𝘂𝗽')
                                         break						
 				case 'add':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (args.length < 1) return reply('𝗽𝗮𝘀𝘁𝗶 𝘆𝗮𝗻𝗴 𝗺𝗮𝘂 𝗱𝗶 𝗮𝗱𝗱 𝗮𝗻𝗮𝗸 𝗽𝘂𝗻𝗴𝘂𝘁?')
 					if (args[0].startsWith('08')) return reply('𝗚𝘂𝗻𝗮𝗸𝗮𝗻 𝗸𝗼𝗱𝗲 𝗻𝗲𝗴𝗮𝗿𝗮')
 					try {
@@ -739,9 +718,6 @@ hafizh.on('group-participants-update', async (anu) => {
 					break
 					case 'grup':
 					case 'group':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (args[0] === 'buka') {
 					    reply(`𝗕𝗲𝗿𝗵𝗮𝘀𝗶𝗹 𝗠𝗲𝗺𝗯𝘂𝗸𝗮 𝗚𝗿𝗼𝘂𝗽`)
 						hafizh.groupSettingChange(from, GroupSettingChange.messageSend, false)
@@ -758,9 +734,6 @@ hafizh.on('group-participants-update', async (anu) => {
        hafizh.sendMessage(from, 'wa.me/+6287775452636',MessageType.text, { quoted: tod} )
            break    
            case 'demote':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (tod.message.extendedTextMessage === undefined || tod.message.extendedTextMessage === null) return reply('𝗧𝗮𝗴 𝘁𝗮𝗿𝗴𝗲𝘁 𝘆𝗮𝗻𝗴 𝗶𝗻𝗴𝗶𝗻 𝗱𝗶 𝘁𝗲𝗻𝗱𝗮𝗻𝗴!')
 					mentioned = tod.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
@@ -777,9 +750,6 @@ hafizh.on('group-participants-update', async (anu) => {
 					}
 					break
 				case 'promote':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (tod.message.extendedTextMessage === undefined || tod.message.extendedTextMessage === null) return reply('𝗧𝗮𝗴 𝘁𝗮𝗿𝗴𝗲𝘁 𝘆𝗮𝗻𝗴 𝗶𝗻𝗴𝗶𝗻 𝗱𝗶 𝘁𝗲𝗻𝗱𝗮𝗻𝗴!')
 					mentioned = tod.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
@@ -796,9 +766,6 @@ hafizh.on('group-participants-update', async (anu) => {
 					}
 					break	
 			     	case 'kick':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (tod.message.extendedTextMessage === undefined || tod.message.extendedTextMessage === null) return reply('𝗧𝗮𝗴 𝘁𝗮𝗿𝗴𝗲𝘁 𝘆𝗮𝗻𝗴 𝗶𝗻𝗴𝗶𝗻 𝗱𝗶 𝘁𝗲𝗻𝗱𝗮𝗻𝗴!')
 					mentioned = tod.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
@@ -815,7 +782,6 @@ hafizh.on('group-participants-update', async (anu) => {
 					}
 					break
 				case 'listadmin':
-					if (!isGroup) return reply(mess.only.group)
 					teks = `𝗟𝗶𝘀𝘁 𝗮𝗱𝗺𝗶𝗻 𝗼𝗳 𝗴𝗿𝗼𝘂𝗽 *${groupMetadata.subject}*\n𝗧𝗼𝘁𝗮𝗹 : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
@@ -881,8 +847,6 @@ hafizh.on('group-participants-update', async (anu) => {
 					}
 					break
 				case 'welcome':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('𝗜𝘆𝗮 𝘀𝗮𝘆𝗮𝗻𝗴')
 					if (Number(args[0]) === 1) {
 						if (isWelkom) return reply('𝘀𝘂𝗱𝗮𝗵 𝗮𝗸𝘁𝗶𝗳!!!')
@@ -897,8 +861,6 @@ hafizh.on('group-participants-update', async (anu) => {
 						reply('𝗸𝗲𝘁𝗶𝗸 𝗽𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝟭 𝘂𝗻𝘁𝘂𝗸 𝗺𝗲𝗻𝗴𝗮𝗸𝘁𝗶𝗳𝗸𝗮𝗻, 𝟬 𝘂𝗻𝘁𝘂𝗸 𝗺𝗲𝗻𝗼𝗻𝗮𝗸𝘁𝗶𝗳𝗸𝗮𝗻\n𝗰𝗼𝗻𝘁𝗼𝗵: ${prefix}𝘄𝗲𝗹𝗰𝗼𝗺𝗲 𝟭')
 					}
 				case 'clone':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('𝘁𝗮𝗴 𝘁𝗮𝗿𝗴𝗲𝘁 𝘆𝗮𝗻𝗴 𝗺𝗮𝘂 𝗱𝗶 𝗰𝗹𝗼𝗻𝗲!!!')
 					if (tod.message.extendedTextMessage === undefined || tod.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = tod.message.extendedTextMessage.contextInfo.mentionedJid[0]
