@@ -1,5 +1,5 @@
 {
-  "name": "AR15BOT",
+  "name": "HAFIZH",
   "version": "1.0.0",
   "description": "Termux only",
   "main": "index.js",
@@ -35,15 +35,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/A187ID/AR15BOT.git"
+    "url": "git+https://github.com/HAFizh-15/TERMOS-WABOT.git"
   },
   "keywords": [
     "k"
   ],
-  "author": "Abdul Muttaqin",
+  "author": "Hafizh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/A187ID/AR15BOT/issues"
+    "url": "https://github.com/HAFizh-15/TERMOS-WABOT/issues"
   },
-  "homepage": "https://github.com/A187ID/AR15BOT/readme"
+  "homepage": "https://github.com/HAFizh-15/TERMOS-WABOT/readme"
 }
