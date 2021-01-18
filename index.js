@@ -231,12 +231,18 @@ hafizh.on('group-participants-update', async (anu) => {
 					hafizh.sendMessage(from, teks.trim(), extendedText, {quoted: tod, contextInfo: {"mentionedJid": blocked}})
 					break
 		case 'moddroid':
-	data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${tobzkey}`)
-	hepi = data.result[0] 
-	teks = `*Nama*: ${data.result[0].title}\n*publisher*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*size*: ${hepi.size}\n*latest version*: ${hepi.latest_version}\n*genre*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
-					buff = await getBuffer(hepi.image)
-	client.sendMessage(from, buff, image, {quoted: mek, caption: `${teks}`})
-	break
+			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${tobzkey}`)
+			hepi = data.result[0] 
+			teks = `*Nama*: ${data.result[0].title}\n*publisher*: ${hepi.publisher}\n*mod info:* ${hepi.mod_info}\n*size*: ${hepi.size}\n*latest version*: ${hepi.latest_version}\n*genre*: ${hepi.genre}\n*link:* ${hepi.link}\n*download*: ${hepi.download}`
+			buff = await getBuffer(hepi.image)
+			hafizh.sendMessage(from, buff, image, {quoted: tod, caption: `${teks}`})
+			break
+		case 'speed':
+					const timestamp = speed();
+					const latensi = speed() - timestamp
+					const pingnya = `${teks}\nSpeed: ${latensi.toFixed(4)} Second`
+					hafizh.sendMessage(from, `Speed: ${latensi.toFixed(4)} Second\n\n`, MessageType.text, {quoted: tod})
+					break
 				case 'ocr': 
 					if ((isMedia && !tod.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(tod).replace('quotedM','m')).message.extendedTextMessage.contextInfo : tod
