@@ -212,6 +212,11 @@ hafizh.on('group-participants-update', async (anu) => {
 					buffer = await getBuffer(me.imgUrl)
 					hafizh.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
+					case 'runtime':
+    						runtime = process.uptime()
+						teks = `${monospace(`Runtime:\n◪ ${kyun(runtime)}`)}`
+						hafizh.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
+    						break
 			case 'readall':
 					if (!isOwner)return reply(mess.only.ownerB)
 					var chats = await hafizh.chats.all()
