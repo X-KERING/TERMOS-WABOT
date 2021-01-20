@@ -34,7 +34,7 @@ const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 			apiKey = 'APIKEY' // get in https://mhankbarbars.herokuapp.com/api
 			tobzkey = 'APIKEY'// GET IN https://tobz-api.herokuapp.com/api
 			vhtearkey = 'APIKEY'// GET IN https://api.vhtear.com/
-			zekskey = 'APIKEY' //GET IN https://api-zeks.harispoppy.com/api
+			zekskey = 'APIKEY' //GET IN https://api.zeks.xyz/api
 			
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
@@ -511,7 +511,7 @@ hafizh.on('group-participants-update', async (anu) => {
 
 					break
 			    case 'darkjoke':
-                                data = await fetchJson(`https://api-zeks.harispoppy.com/api/darkjokes?apikey=${zekskey}`)
+                                data = await fetchJson(`https://api.zeks.xyz/api/darkjokes?apikey=${zekskey}`)
                                 dark = data.result
                                 thumb = await getBuffer(dark)
                                 hafizh.sendMessage(from, thumb, image, {quoted: tod})
