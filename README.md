@@ -109,7 +109,9 @@ DAN LAIN LAIN
 Ket: Aktif 24 jam
 
 ## DONASI <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="29px">
-* [`Donasi`](saweria.co/HAFizhscript)
+* [`Saweria`](https://saweria.co/HAFizhscript)
+* [`Ko-Fi`](https://ko-fi.com/shirayukibot)
+* [`TrakTeer`](https://trakteer.id/shirayuki)
 
 
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
@@ -118,6 +120,6 @@ Ket: Aktif 24 jam
 * [`Group WhatsApp `](https://chat.whatsapp.com/GejprPqHNQW3cBDuKtb7UX)
 ## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
-* .[`TO27BOT`](https://github.com/MhankBarBar/termux-wabot)
+* [`TO27BOT`](https://github.com/MhankBarBar/termux-wabot)
 * [`MHANKBARBAR`](https://github.com/XTT0G4N5/T027BOT)
 
