@@ -59,7 +59,7 @@ Script ini di modifikasi sama saya dkk.
 * [`Vhtear`](https://vhtear.com)
 * [`Tobzkey`](https://tobz-api.herokuapp.com/api)
 * [`Mhank BarBar`](https://mhankbarbars.herokuapp.com/)
-* [`Zekskey`](https://api-zeks.harispoppy.com/)
+* [`Zekskey`](https://api.zeks.xyz)
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
 
