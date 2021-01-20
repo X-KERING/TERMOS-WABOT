@@ -29,7 +29,7 @@ MAU RE-UPLOAD SCRIPT? KASIH LINK GTIHUB SAYA DAN MHANKBARBAR
 SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA TERMUX
 </div>
 
-Siapin alat dan bahannya.
+# Siapin alat dan bahannya.
 ```bash
 > niat
 > 2 handphone (1 buat jalanin sc, 1 buat scan kode qr)
@@ -121,4 +121,7 @@ Ket: Aktif 24 jam
 ## THANKS TO
 * [`TO27BOT`](https://github.com/MhankBarBar/termux-wabot)
 * [`MHANKBARBAR`](https://github.com/XTT0G4N5/T027BOT)
-DAN SEMUA PEMILIK API
+* [`Vhtear`](https://vhtear.com)
+* [`Tobzkey`](https://tobz-api.herokuapp.com/api)
+* [`Mhank BarBar`](https://mhankbarbars.herokuapp.com/)
+* [`Zekskey`](https://api.zeks.xyz)
