@@ -51,6 +51,8 @@ Script ini di modifikasi sama saya dkk.
 > bash install.sh
 > node index js
 > Tinggal scan kode qr yeee...done
+
+NOTE: BISA DI RUN DI WINDOWS/LINUX (tidak hanya di termux)
 ```
 
 ## KLO MAU PAKAI JANGAN LUPA DI FORK YA NGAB
