@@ -248,6 +248,14 @@ hafizh.on('group-participants-update', async (anu) => {
 			buff = await getBuffer(hepi.image)
 			hafizh.sendMessage(from, buff, image, {quoted: tod, caption: `${teks}`})
 			break
+	    case 'film':
+		data = await fetchJson(`https://api.zeks.xyz/api/film?q=${body.slice(6)}&apikey=${zekskey}`)
+		teks = '\n'
+		for (let i of data.result) {
+		teks += `Judul: ${i.tile}\nLink: ${i.url}`
+		buffs = await getBufer(data.result[0].thumb)
+		hafizh.sendMessage(from, buffs, image, {quoted: tod, caption: teks}) 
+		break
 		case 'speed':
 					const timestamp = speed();
 					const latensi = speed() - timestamp
