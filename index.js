@@ -255,6 +255,7 @@ hafizh.on('group-participants-update', async (anu) => {
 		teks += `Judul: ${i.tile}\nLink: ${i.url}`
 		buffs = await getBufer(data.result[0].thumb)
 		hafizh.sendMessage(from, buffs, image, {quoted: tod, caption: teks}) 
+		}
 		break
 		case 'speed':
 					const timestamp = speed();
