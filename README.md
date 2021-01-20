@@ -29,7 +29,6 @@ MAU RE-UPLOAD SCRIPT? KASIH LINK GTIHUB SAYA DAN MHANKBARBAR
 SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA TERMUX
 </div>
 
-### ALAT DAN BAHAN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Hello_Big.gif" width="29px">
 Siapin alat dan bahannya.
 ```bash
 > niat
@@ -41,7 +40,7 @@ Siapin alat dan bahannya.
 > kopi biar ga gabut
 ```
 
-### CARA INSTALLNYA  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px">
+### CARA INSTALLNYA
 Script ini di modifikasi sama saya dkk.
 ```bash
 > kalo lu belum punya apk termux, download di playstore
@@ -63,9 +62,8 @@ NOTE: BISA DI RUN DI WINDOWS/LINUX (tidak hanya di termux)
 * [`Mhank BarBar`](https://mhankbarbars.herokuapp.com/)
 * [`Zekskey`](https://api.zeks.xyz)
 
-## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
-
-| T027BOT      |                   Feature        |
+## FEATURES  
+| SELF-BOT     |                   Feature        |
 | :-----------: | :------------------------------: |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
@@ -110,18 +108,17 @@ DAN LAIN LAIN
 
 Ket: Aktif 24 jam
 
-## DONASI <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="29px">
+# DONASI
 * [`Saweria`](https://saweria.co/HAFizhscript)
 * [`Ko-Fi`](https://ko-fi.com/shirayukibot)
 * [`TrakTeer`](https://trakteer.id/shirayuki)
 
 
-## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
+## SOSIAL MEDIA ADMIN
 
 * [`WhatsApp Admin `](https://wa.me/+6285959375675)
 * [`Group WhatsApp `](https://chat.whatsapp.com/GejprPqHNQW3cBDuKtb7UX)
-## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
-
+## THANKS TO
 * [`TO27BOT`](https://github.com/MhankBarBar/termux-wabot)
 * [`MHANKBARBAR`](https://github.com/XTT0G4N5/T027BOT)
-
+DAN SEMUA PEMILIK API
