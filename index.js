@@ -235,6 +235,12 @@ hafizh.on('group-participants-update', async (anu) => {
 					teks += `𝗧𝗼𝘁𝗮𝗹 : ${blocked.length}`
 					hafizh.sendMessage(from, teks.trim(), extendedText, {quoted: tod, contextInfo: {"mentionedJid": blocked}})
 					break
+           case 'fordward':
+	   hafizh.sendMessage(from, `${body.slice(10)}`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true }})
+           break
+            case 'fordward1':
+           hafizh.sendMessage(from, `${body.slice(11)}`, MessageType.text, {contextInfo: { forwardingScore: 2, isForwarded: true }})
+           break
 		case 'moddroid':
 			data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=${tobzkey}`)
 			hepi = data.result[0] 
