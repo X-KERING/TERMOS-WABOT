@@ -95,6 +95,8 @@ Script ini di modifikasi sama saya dkk.
 |       ✅       | meme                           |
 |       ✅       | memeindo                     |
 |       ✅       | ocr                      |
+|       ✅       | fordward                      |
+|       ✅       | runtime                      |
 |       ✅       | clone                            |
 |       ✅       | bc                          |
 |       ✅       | leave                             |
