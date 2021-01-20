@@ -34,7 +34,7 @@ const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 			apiKey = 'APIKEY' // get in https://mhankbarbars.herokuapp.com/api
 			tobzkey = 'APIKEY'// GET IN https://tobz-api.herokuapp.com/api
 			vhtearkey = 'APIKEY'// GET IN https://api.vhtear.com/
-			zekskey = 'APIKEY' //GET IN https://api.zeks.xyz/api
+			zekskey = 'APIKEY' //GET IN https://api.zeks.xyz
 			
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
