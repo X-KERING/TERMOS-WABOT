@@ -259,7 +259,7 @@ hafizh.on('group-participants-update', async (anu) => {
 		break
 	case 'toptt':
 					reply(mess.wait)
-					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+					encmedia = JSON.parse(JSON.stringify(tod).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
@@ -269,6 +269,13 @@ hafizh.on('group-participants-update', async (anu) => {
 						hafizh.sendMessage(from, topt, audio, {mimetype: 'audio/mp4', quoted: tod, ptt:true})
 						})
 						break
+	case 'randomquran':
+			data = await fetchJson(`https://api.zeks.xyz/api/randomquran`)
+			teks = `Nama: ${data.result.nama}\nArti: ${data.result.arti}\nayat: ${data.result.ayat}\nAsma: ${data.result.asma}\nRukuk: ${data.result.rukuk}\nNomor: ${data.result.nomor}\nType: ${data.result.type}\nKeterangan: ${data.result.keterangan}`
+			buffs = await getBuffer(data.result.audio)
+			hafizh.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
+			hafizh.sendMessage(from, buffs, audio, {mimetype: 'audio/mp4', filename: `quran.mp3`, quoted: tod})
+			break
 		case 'speed':
 					const timestamp = speed();
 					const latensi = speed() - timestamp
