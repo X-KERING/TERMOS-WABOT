@@ -300,6 +300,11 @@ hafizh.on('group-participants-update', async (anu) => {
 						reply(`𝗸𝗶𝗿𝗶𝗺 𝗳𝗼𝘁𝗼 𝗱𝗲𝗻𝗴𝗮𝗻 𝗰𝗮𝗽𝘁𝗶𝗼𝗻 ${prefix}𝗼𝗰𝗿`)
 					}
 					break
+				case 'fml':
+					data = await fetchJson(`https://api.zeks.xyz/api/fml`)
+					teks  = `Fml: ${data.result}`
+					hafizh.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
+					break
 				case 'stiker': 
 				case 'sticker':
 				case 's':
