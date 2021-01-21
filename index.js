@@ -257,6 +257,18 @@ hafizh.on('group-participants-update', async (anu) => {
 		hafizh.sendMessage(from, buffs, image, {quoted: tod, caption: teks}) 
 		}
 		break
+	case 'toptt':
+					reply(mess.wait)
+					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+					media = await client.downloadAndSaveMediaMessage(encmedia)
+					ran = getRandom('.mp3')
+					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
+						fs.unlinkSync(media)
+						if (err) return reply('Gagal mengkonversi audio ke ptt')
+						topt = fs.readFileSync(ran)
+						hafizh.sendMessage(from, topt, audio, {mimetype: 'audio/mp4', quoted: tod, ptt:true})
+						})
+						break
 		case 'speed':
 					const timestamp = speed();
 					const latensi = speed() - timestamp
