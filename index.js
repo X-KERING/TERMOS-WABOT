@@ -31,7 +31,7 @@ const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 			// API KEY
-			apiKey = 'APIKEY' // get in https://mhankbarbars.herokuapp.com/api
+			apiKey = 'APIKEY' // get in https://mhankbarbar.tech/api
 			tobzkey = 'APIKEY'// GET IN https://tobz-api.herokuapp.com/api
 			vhtearkey = 'APIKEY'// GET IN https://api.vhtear.com/
 			zekskey = 'APIKEY' //GET IN https://api.zeks.xyz
@@ -587,13 +587,13 @@ hafizh.on('group-participants-update', async (anu) => {
 					break
 				case 'hilih': 
 					if (args.length < 1) return reply('𝗸𝗮𝘀𝗶𝗵 𝘁𝗲𝗸𝘀 𝗹𝗮𝗵!!!')
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
 					reply(anu.result)
 					break
 				case 'yt': 
 					if (args.length < 1) return reply('𝘂𝗿𝗹𝗻𝘆𝗮 𝗺𝗮𝗻𝗮?')
 					if(!isUrl(args[0]) && !args[0].includes('youtube.com')) return reply(mess.error.Iv)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/yta?url=${args[0]}&apiKey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/yta?url=${args[0]}&apiKey=${apikey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `*Title* : ${anu.title}\n*Filesize* : ${anu.filesize}`
 					thumb = await getBuffer(anu.thumb)
@@ -603,7 +603,7 @@ hafizh.on('group-participants-update', async (anu) => {
 					break
 				case 'ytsearch': 
 					if (args.length < 1) return reply('𝗧𝗲𝗸𝘀𝗻𝘆𝗮 𝗺𝗮𝗻𝗮 𝘁𝗲𝗸𝘀?')
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/ytsearch?q=${body.slice(10)}&apiKey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/ytsearch?q=${body.slice(10)}&apiKey=${apikey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
 					for (let i of anu.result) {
@@ -614,7 +614,7 @@ hafizh.on('group-participants-update', async (anu) => {
 				case 'yt2mp3':
 					if (args.length < 1) return reply('Urlnya mana um?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/yta?url=${args[0]}&apiKey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/yta?url=${args[0]}&apiKey=${apikey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = `*Title* : ${anu.title}\n*Filesize* : ${anu.filesize}`
 					thumb = await getBuffer(anu.thumb)
@@ -646,7 +646,7 @@ hafizh.on('group-participants-update', async (anu) => {
 					if (args.length < 1) return reply('𝘂𝗿𝗹𝗻𝘆𝗮 𝗺𝗮𝗻𝗮?')
 					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
 					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/tiktok?url=${args[0]}&apiKey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/tiktok?url=${args[0]}&apiKey=${apikey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buffer = await getBuffer(anu.result)
 					hafizh.sendMessage(from, buffer, video, {quoted: tod})
@@ -669,7 +669,7 @@ hafizh.on('group-participants-update', async (anu) => {
 					if (args.length < 1) return reply('𝗧𝗲𝗸𝘀𝗻𝘆𝗮 𝗺𝗮𝗻𝗮 𝘁𝗲𝗸𝘀?')
 					teks = body.slice(7)
 					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/nulis?text=${teks}&apiKey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/nulis?text=${teks}&apiKey=${apikey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buff = await getBuffer(anu.result)
 					hafizh.sendMessage(from, buff, image, {quoted: tod, caption: mess.success})
@@ -681,7 +681,7 @@ hafizh.on('group-participants-update', async (anu) => {
 					if (args.length < 2) return reply('𝘂𝗿𝗹𝗻𝘆𝗮 𝗺𝗮𝗻𝗮?')
 					if (!isUrl(args[1])) return reply(mess.error.Iv)
 					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/url2image?tipe=${args[0]}&url=${args[1]}&apiKey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/url2image?tipe=${args[0]}&url=${args[1]}&apiKey=${apikey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buff = await getBuffer(anu.result)
 					hafizh.sendMessage(from, buff, image, {quoted: tod})
@@ -692,7 +692,7 @@ hafizh.on('group-participants-update', async (anu) => {
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
 					teks = body.slice(9).trim()
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/text2image?text=${teks}&apiKey=${apikey}`, {method: 'get'})
+					anu = await fetchJson(`https://mhankbarbar.tech/api/text2image?text=${teks}&apiKey=${apikey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(ranp)
@@ -865,7 +865,7 @@ hafizh.on('group-participants-update', async (anu) => {
 				case 'simi':
 					if (args.length < 1) return reply('𝗸𝗮𝘀𝗶𝗵 𝘁𝗲𝗸𝘀 𝗹𝗮𝗵!!!')
 					teks = body.slice(5)
-					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
+					anu = await simih(teks) //fetchJson(`https://mhankbarbar.tech/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
 					reply(anu)
 					break
