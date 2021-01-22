@@ -30,10 +30,11 @@ const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 			// API KEY
-			apiKey = 'APIKEY' // get in https://mhankbarbar.tech/api
-			tobzkey = 'APIKEY'// GET IN https://tobz-api.herokuapp.com/api
-			vhtearkey = 'APIKEY'// GET IN https://api.vhtear.com/
-			zekskey = 'APIKEY' //GET IN https://api.zeks.xyz
+			const apiKey = 'APIKEY' // get in https://mhankbarbar.tech/api
+			const tobzkey = 'APIKEY'// GET IN https://tobz-api.herokuapp.com/api
+			const vhtearkey = 'APIKEY'// GET IN https://api.vhtear.com/
+			const zekskey = 'APIKEY' //GET IN https://api.zeks.xyz
+			const techkey = 'APIKEY' //GET IN https://api.i-tech.id
 			
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
@@ -216,6 +217,21 @@ hafizh.on('group-participants-update', async (anu) => {
 						teks = `${monospace(`Runtime:\n◪ ${kyun(runtime)}`)}`
 						hafizh.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
     						break
+			case 'xl':
+				data = await fetchJson(`https://api.i-tech.id/tagihan/xl?key=${techkey}&no=${body.slice(4)}`)
+				teks = `Nomor: ${data.nomor}\nNama: ${data.nama}\nTotal: ${data.total}\nStatus: ${data.status}\ntagihan: ${data.lembar_tagihan}`
+				hafizh.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
+				break
+			case 'halo':
+				data = await fetchJson(`https://api.i-tech.id/tagihan/halo?key=${techkey}&no=${body.slice(6)}`)
+				teks = `Nomor: ${data.nomor}\nNama: ${data.nama}\nTotal: ${data.total}\nStatus: ${data.status}\ntagihan: ${data.lembar_tagihan}`
+				client.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
+				break
+			case 'gas':
+				data = await fetchJson(`https://api.i-tech.id/tagihan/gas?key=${techkey}&no=${body.slice(5)}`)
+				teks = `Nomor: ${data.nomor}\nNama: ${data.nama}\nTotal: ${data.total}\nStatus: ${data.status}\ntagihan: ${data.lembar_tagihan}`
+				hafizh.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
+				break
 			case 'readall':
 					if (!isOwner)return reply(mess.only.ownerB)
 					var chats = await hafizh.chats.all()
