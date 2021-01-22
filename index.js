@@ -686,6 +686,13 @@ hafizh.on('group-participants-update', async (anu) => {
 					buff = await getBuffer(anu.result)
 					hafizh.sendMessage(from, buff, image, {quoted: tod})
 					break
+				case 'carbon':
+					if (args.length < 1)return reply('Sertakan teks nya')
+					targed = mek.participant
+					teks = body.slice(8)
+					drc = await getBuffer(`https://carbonnowsh.herokuapp.com/?code=${teks}`)
+					hafizh.sendMessage(from, drc, image, {quoted: tod})
+					break
 				case 'tstiker':
 				case 'tsticker': 
 					if (args.length < 1) return reply('𝗸𝗮𝘀𝗶𝗵 𝘁𝗲𝗸𝘀 𝗹𝗮𝗵!!!')
