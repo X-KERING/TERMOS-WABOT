@@ -242,6 +242,12 @@ hafizh.on('group-participants-update', async (anu) => {
 					await hafizh.sendMessage(from, teks, MessageType.text, {quoted: tod})
 					console.log(chats.length)
 					break
+			case 'setstatus':
+				hafizh.setStatus(`${body.slice(11)}`)
+   				.then(data => {
+        			reply(JSON.stringify(data))
+    				}).catch(err => console.log(err))
+    				break
 				case 'blocklist': 
 					teks = 'BLOCK LIST  :\n'
 					for (let block of blocked) {
