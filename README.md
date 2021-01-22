@@ -30,7 +30,7 @@ SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA 
 </div>
 
 # Siapin alat dan bahannya.
-`bash
+```bash
 > niat
 > 2 handphone (1 buat jalanin sc, 1 buat scan kode qr)
 > jaringan internet kenceng,kuota+
@@ -38,13 +38,13 @@ SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA 
 > aplikasi whatsapp
 > aplikasi termux
 > kopi biar ga gabut
-`
+```
 
 ## NOTE!!: NODEJS V10
 
 ### CARA INSTALLNYA
 Script ini di modifikasi sama saya dkk.
-`bash
+```bash
 > kalo lu belum punya apk termux, download di playstore
 > masuk ke apk termux lalu ketik dibawah ini!
 > git clone https://github.com/HAFizh-15/TERMOS-WABOT
@@ -54,7 +54,7 @@ Script ini di modifikasi sama saya dkk.
 > Tinggal scan kode qr yeee...done
 
 NOTE: BISA DI RUN DI WINDOWS/LINUX (tidak hanya di termux)
-`
+```
 
 ## KLO MAU PAKAI JANGAN LUPA DI FORK YA NGAB
 
