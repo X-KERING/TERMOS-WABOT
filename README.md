@@ -124,8 +124,5 @@ Ket: Aktif 24 jam
 ## THANKS TO
 * [`TO27BOT`](https://github.com/MhankBarBar/termux-wabot)
 * [`MHANKBARBAR`](https://github.com/XTT0G4N5/T027BOT)
-* [`Vhtear`](https://vhtear.com)
-* [`i-tech`](https://api.i-tech.id)
-* [`Tobz api`](https://tobz-api.herokuapp.com/api)
-* [`MhankBarBar api`](https://mhankbarbars.herokuapp.com/)
-* [`Zeks api`](https://api.zeks.xyz)
+* [`1NSOMNIA`](https://github.com/1NS0MNIA)
+* [`Vin781`](https://github.com/vinz781)
