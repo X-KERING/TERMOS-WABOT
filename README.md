@@ -40,6 +40,8 @@ SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA 
 > kopi biar ga gabut
 ```
 
+## NOTE!!: NODEJS V10
+
 ### CARA INSTALLNYA
 Script ini di modifikasi sama saya dkk.
 ```bash
