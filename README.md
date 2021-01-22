@@ -60,6 +60,7 @@ NOTE: BISA DI RUN DI WINDOWS/LINUX (tidak hanya di termux)
 
 ##  APIKEY
 * [`Vhtear`](https://vhtear.com)
+* [`i-tech`](https://api.i-tech.id)
 * [`Tobzkey`](https://tobz-api.herokuapp.com/api)
 * [`Mhank BarBar`](https://mhankbarbars.herokuapp.com/)
 * [`Zekskey`](https://api.zeks.xyz)
@@ -124,6 +125,7 @@ Ket: Aktif 24 jam
 * [`TO27BOT`](https://github.com/MhankBarBar/termux-wabot)
 * [`MHANKBARBAR`](https://github.com/XTT0G4N5/T027BOT)
 * [`Vhtear`](https://vhtear.com)
+* [`i-tech`](https://api.i-tech.id)
 * [`Tobz api`](https://tobz-api.herokuapp.com/api)
 * [`MhankBarBar api`](https://mhankbarbars.herokuapp.com/)
 * [`Zeks api`](https://api.zeks.xyz)
