@@ -278,6 +278,12 @@ hafizh.on('group-participants-update', async (anu) => {
 		hafizh.sendMessage(from, buffs, image, {quoted: tod, caption: teks}) 
 		}
 		break
+	case 'setstatus':
+		client.setStatus(`${body.slice(11)}`)
+   		.then(data => {
+        	reply(JSON.stringify(data))
+   		 }).catch(err => console.log(err))
+    		break
 	case 'toptt':
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(tod).replace('quotedM','m')).message.extendedTextMessage.contextInfo
