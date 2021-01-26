@@ -31,9 +31,9 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 			// API KEY
 			const apiKey = 'APIKEY' // get in https://mhankbarbar.tech/api
-			const tobzkey = 'APIKEY'// GET IN https://tobz-api.herokuapp.com/api
+			const tobzkey = 'BotWeA'// GET IN https://tobz-api.herokuapp.com/api
 			const vhtearkey = 'APIKEY'// GET IN https://api.vhtear.com/
-			const zekskey = 'APIKEY' //GET IN https://api.zeks.xyz
+			const zekskey = 'apivinz' //GET IN https://api.zeks.xyz
 			const techkey = 'APIKEY' //GET IN https://api.i-tech.id
 			
 const vcard = 'BEGIN:VCARD\n'
@@ -572,6 +572,12 @@ hafizh.on('group-participants-update', async (anu) => {
 					break
 			    case 'darkjoke':
                                 data = await fetchJson(`https://api.zeks.xyz/api/darkjokes?apikey=${zekskey}`)
+                                dark = data.result
+                                thumb = await getBuffer(dark)
+                                hafizh.sendMessage(from, thumb, image, {quoted: tod})
+                                break
+			case 'memeind':
+                                data = await fetchJson(`https://api.zeks.xyz/api/memeindo?apikey=${zekskey}`)
                                 dark = data.result
                                 thumb = await getBuffer(dark)
                                 hafizh.sendMessage(from, thumb, image, {quoted: tod})
