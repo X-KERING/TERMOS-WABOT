@@ -133,3 +133,10 @@ Ket: Aktif 24 jam
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHAFizh-15%2FTERMOS-WABOT.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHAFizh-15%2FTERMOS-WABOT?ref=badge_large)
 
 ## REPOSITORY BY HAFIZH
+
+
+alasan menggunakan banyak api: 
+- Khawatir ada Fitur Yang di larang di sebar
+- Khawatir Ada Fitur Langka DI Repostiroey ini
+
+sekian terimakasih
