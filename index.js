@@ -618,6 +618,16 @@ hafizh.on('group-participants-update', async (anu) => {
 					anu = await fetchJson(`https://shirayuki-api.herokuapp.com/api/v1/holoh?kata=${body.slice(7)}`, {method: 'get'})
 					reply(anu.result)
 					break
+				case 'terbalik':
+					if (args.length < 1) return reply('𝗸𝗮𝘀𝗶𝗵 𝘁𝗲𝗸𝘀 𝗹𝗮𝗵!!!')
+					meki = await fetchJson(`https://videfikri.com/api/hurufterbalik/?query=${body.slice(10)}`)
+					hafizh.sendMessage(from, `Input: ${body.slice(10)}\nOutput: ${meki.result.kata}`, MessageType.text, {quoted: tod})
+					break
+				case 'huruf':
+					if (args.length < 1) return reply('𝗸𝗮𝘀𝗶𝗵 𝘁𝗲𝗸𝘀 𝗹𝗮𝗵!!!')
+					meki = await fetchJson(`https://videfikri.com/api/jumlahhuruf/?query=${body.slice(7)}`)
+					client.sendMessage(from, `Input: ${body.slice(7)}\nJumlah Huruf: ${meki.result.jumlah}`, MessageType.text, {quoted: tod})
+					break
 				case 'hilih': 
 					if (args.length < 1) return reply('𝗸𝗮𝘀𝗶𝗵 𝘁𝗲𝗸𝘀 𝗹𝗮𝗵!!!')
 					anu = await fetchJson(`https://mhankbarbar.tech/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
