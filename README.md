@@ -137,6 +137,6 @@ Ket: Aktif 24 jam
 
 alasan menggunakan banyak api: 
 - Khawatir ada Fitur Yang di larang di sebar
-- Khawatir Ada Fitur Langka DI Repostiroey ini
+- Khawatir Ada Fitur Langka DI Repository ini
 
 sekian terimakasih
