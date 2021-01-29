@@ -248,6 +248,17 @@ hafizh.on('group-participants-update', async (anu) => {
         			reply(JSON.stringify(data))
     				}).catch(err => console.log(err))
     				break
+			
+
+			
+
+					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
+
+					hafizh.groupCreate (`${gc}`, [`${sender}`, `${mentioned}`])
+
+					console.log ("created group with id: " + group.gid)
+
+					break
 				case 'blocklist': 
 					teks = 'BLOCK LIST  :\n'
 					for (let block of blocked) {
