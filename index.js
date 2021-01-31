@@ -226,7 +226,7 @@ hafizh.on('group-participants-update', async (anu) => {
 					encmedia = JSON.parse(JSON.stringify(tod).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await hafizh.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
-					exec(`ffmpeg -i ${media} -af equalizer=f=20:width_type=o:width=2:g=30 ${ran}`, (err, stderr, stdout) => {
+					exec(`ffmpeg -i ${media} -af equalizer=f=64:width_type=o:width=2:g=56 ${ran}`, (err, stderr, stdout) => {
 						fs.unlinkSync(media)
 						if (err) return reply('Error!')
 						hah = fs.readFileSync(ran)
