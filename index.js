@@ -222,6 +222,18 @@ hafizh.on('group-participants-update', async (anu) => {
 				teks = `Nomor: ${data.nomor}\nNama: ${data.nama}\nTotal: ${data.total}\nStatus: ${data.status}\ntagihan: ${data.lembar_tagihan}`
 				hafizh.sendMessage(from, `${teks}`, MessageType.text, {quoted: tod})
 				break
+		       case 'bass':
+					encmedia = JSON.parse(JSON.stringify(tod).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+					media = await hafizh.downloadAndSaveMediaMessage(encmedia)
+					ran = getRandom('.mp3')
+					exec(`ffmpeg -i ${media} -af equalizer=f=20:width_type=o:width=2:g=30 ${ran}`, (err, stderr, stdout) => {
+						fs.unlinkSync(media)
+						if (err) return reply('Error!')
+						hah = fs.readFileSync(ran)
+						hafizh.sendMessage(from, hah, audio, {mimetype: 'audio/mp4', ptt:true, quoted: tod})
+						fs.unlinkSync(ran)
+					})
+				break
 			case 'halo':
 				data = await fetchJson(`https://api.i-tech.id/tagihan/halo?key=${techkey}&no=${body.slice(6)}`)
 				teks = `Nomor: ${data.nomor}\nNama: ${data.nama}\nTotal: ${data.total}\nStatus: ${data.status}\ntagihan: ${data.lembar_tagihan}`
