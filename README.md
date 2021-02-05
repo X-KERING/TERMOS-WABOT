@@ -128,6 +128,10 @@ Ket: Aktif 24 jam
 * [`1NSOMNIA`](https://github.com/1NS0MNIA)
 * [`Vin781`](https://github.com/vinz781)
 
+# Jangan Menjual Sc Ini cuk
+
+
+
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHAFizh-15%2FTERMOS-WABOT.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHAFizh-15%2FTERMOS-WABOT?ref=badge_large)
